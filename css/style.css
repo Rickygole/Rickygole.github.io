@@ -402,12 +402,38 @@ body.offcanvas {
 .colorlib-work,
 .colorlib-about,
 .colorlib-services,
-.colorlib-contact {
-  padding-top: 4em;
-  padding-bottom: 9em;
-  clear: both;
-  width: 100%;
-  display: block; }
+  .colorlib-contact {
+    padding-top: 4em;
+    padding-bottom: 9em;
+    clear: both;
+    width: 100%;
+    display: block;
+  }
+  .colorlib-contact .colorlib-narrow-content .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .colorlib-contact .colorlib-narrow-content .col-md-5,
+  .colorlib-contact .colorlib-narrow-content .col-md-7 {
+    float: none;
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+  }
+  .colorlib-contact .colorlib-narrow-content .col-md-7 {
+    padding-left: 30px;
+  }
+  @media screen and (max-width: 992px) {
+    .colorlib-contact .colorlib-narrow-content .col-md-5,
+    .colorlib-contact .colorlib-narrow-content .col-md-7 {
+      width: 100%;
+      max-width: 100%;
+      flex: 0 0 100%;
+      padding-left: 0;
+    }
+  }
   @media screen and (max-width: 768px) {
     .colorlib-experience,
     .colorlib-skills,
