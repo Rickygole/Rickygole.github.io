@@ -242,16 +242,22 @@ figure {
   max-width: 1170px;
   margin: 0 auto; }
 
+
 #colorlib-main {
   width: calc(100% - 300px);
-  float: right;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s; }
-  @media screen and (max-width: 768px) {
-    #colorlib-main {
-      width: 100%;
-      padding: 0 1em; } }
+  margin-left: 300px;
+  float: none;
+  display: block;
+  transition: 0.5s;
+  padding: 3em 0 3em 0;
+}
+@media screen and (max-width: 768px) {
+  #colorlib-main {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 1em;
+  }
+}
 
 #colorlib-hero {
   min-height: 500px;
