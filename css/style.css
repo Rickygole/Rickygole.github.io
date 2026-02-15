@@ -242,22 +242,16 @@ figure {
   max-width: 1170px;
   margin: 0 auto; }
 
-
-/* Fix overlap: add margin-left for sidebar */
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;
-  margin-left: 300px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  transition: 0.5s;
-}
-@media screen and (max-width: 768px) {
-  #colorlib-main {
-    width: 100%;
-    padding: 0 1em;
-  }
-}
+  transition: 0.5s; }
+  @media screen and (max-width: 768px) {
+    #colorlib-main {
+      width: 100%;
+      padding: 0 1em; } }
 
 #colorlib-hero {
   min-height: 500px;
