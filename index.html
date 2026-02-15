@@ -90,7 +90,7 @@
 										<span class="heading-meta">About</span>
 										<h3 class="colorlib-heading">“Programs must be written for people to read, and only incidentally for machines to execute.” — Harold Abelson</h3>
                                                                                 <p>
-                                                                                <strong>Ricky Gole</strong> Ricky Gole is a graduate machine learning researcher at Morgan State University specializing in natural language processing and retrieval-augmented generation systems. His work focuses on improving the reliability of large language models by addressing hallucination, semantic drift, and personalization failures in real-world applications. He has analyzed over 15.8 million user interactions to study the relationship between behavioral signals and semantic meaning, and has designed hybrid retrieval architectures that outperform zero-shot LLM baselines. His research integrates large-scale data analysis, semantic embedding models, and transformer-based architectures to develop LLM systems that are accurate, grounded in evidence, and empirically validated.</p>
+                                                                                <strong>Ricky Gole</strong>  is a graduate machine learning researcher at Morgan State University specializing in natural language processing and retrieval-augmented generation systems. His work focuses on improving the reliability of large language models by addressing hallucination, semantic drift, and personalization failures in real-world applications. He has analyzed over 15.8 million user interactions to study the relationship between behavioral signals and semantic meaning, and has designed hybrid retrieval architectures that outperform zero-shot LLM baselines. His research integrates large-scale data analysis, semantic embedding models, and transformer-based architectures to develop LLM systems that are accurate, grounded in evidence, and empirically validated.</p>
                                                                                 <p>
                                                                                Ricky Gole is currently pursuing a Master’s degree in Advanced Computing at Morgan State University, where he conducts research in natural language processing and retrieval augmented generation systems with a focus on large language model reliability, alignment, and evaluation under real world data conditions; he previously earned a Bachelor’s degree in Computer Information Systems and Financial Economics from Caldwell University, where he developed a strong foundation in software engineering, data systems, and statistical modeling; his current work integrates transformer based architectures, semantic embeddings, and Direct Preference Optimization on Llama 3 to design retrieval and generation pipelines that reduce hallucination, enforce semantic grounding, and improve evidence based reasoning, and his research contributes to ongoing scholarly work in machine learning, educational data mining, and trustworthy AI systems. </p>  
 									</div>
@@ -179,18 +179,43 @@
 						<div class="row">
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 								<div class="project-card" style="background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:32px 24px;margin-bottom:32px;">
-									<h3 style="font-weight:600;">LLM Alignment with DPO (Llama-3-8B)</h3>
-									<p>Developed a Direct Preference Optimization pipeline with LoRA fine tuning for Llama-3-8B to improve faithfulness in generation tasks. Engineered a RAG evaluation framework comparing behavioral vs semantic retrieval and measured alignment effectiveness against constraint-based decoding methods.</p>
-									<div style="margin-top:16px;">
-										<span style="display:inline-block;background:#f3f3f3;border-radius:6px;padding:4px 12px;margin-right:8px;font-size:13px;">PyTorch</span>
-										<span style="display:inline-block;background:#f3f3f3;border-radius:6px;padding:4px 12px;margin-right:8px;font-size:13px;">Llama-3</span>
-										<span style="display:inline-block;background:#f3f3f3;border-radius:6px;padding:4px 12px;margin-right:8px;font-size:13px;">DPO</span>
-										<span style="display:inline-block;background:#f3f3f3;border-radius:6px;padding:4px 12px;margin-right:8px;font-size:13px;">LoRA</span>
-										<span style="display:inline-block;background:#f3f3f3;border-radius:6px;padding:4px 12px;margin-right:8px;font-size:13px;">HuggingFace</span>
-										<span style="display:inline-block;background:#f3f3f3;border-radius:6px;padding:4px 12px;margin-right:8px;font-size:13px;">LLM Evaluation</span>
-									</div>
+									<h3 style="font-weight:600;">The Semantic Gap in Behavioral Embeddings for Educational RAG in Mathematics</h3>
+									<p>Built a large scale empirical study of retrieval systems using 15.8 million student interactions to test whether behavioral similarity captures semantic meaning. Constructed a 50 dimensional SVD behavioral manifold and measured its relationship to S BERT semantic embeddings, showing that linear behavioral representations do not encode semantic intent and lead to topical drift in RAG systems. Designed a two stage Manifold Augmented Generation pipeline that enforces semantic primacy through semantic filtering and behavioral personalization, and evaluated alignment strategies using DPO on Llama 3.</p>
 									<div style="margin-top:12px;font-size:14px;color:#333;">
-										<strong>Result:</strong> DPO underperformed constrained generation (2.96 vs 4.75, 0% win rate, p &lt; 0.001)
+										<strong>Highlight:</strong> Near zero behavioral semantic correlation r equals 0.006 with p equals 0.78 and MAG improved performance to 4.78 versus 4.27 for GPT 4o baseline with p less than 0.001
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="project-card" style="background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:32px 24px;margin-bottom:32px;">
+									<h3 style="font-weight:600;">Evaluating the Marginal Utility of Complexity in Knowledge Tracing for RAG Systems</h3>
+									<p>Developed domain specific language models and retrieval pipelines to analyze whether increased model complexity improves performance in educational RAG tasks. Fine tuned Llama 3 using Direct Preference Optimization to reduce hallucination and built a full RAG evaluation pipeline comparing semantic and behavioral retrieval strategies under real user data. Established empirical limits of personalization by analyzing large scale interaction data and embedding structures.</p>
+									<div style="margin-top:12px;font-size:14px;color:#333;">
+										<strong>Highlight:</strong> Demonstrated measurable performance differences between semantic and behavioral retrieval strategies across large scale evaluation with improved reliability over GPT 4o baselines
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="project-card" style="background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:32px 24px;margin-bottom:32px;">
+									<h3 style="font-weight:600;">BIO DQNA Meta Learning and Contrastive Reinforcement Learning for Personalized Comorbidity Management</h3>
+									<p>Designed a reinforcement learning system for personalized treatment recommendation using Rainbow DQN and contrastive learning for Type 1 Diabetes and hypertension management. Engineered safety constrained reward functions and penalty shaping to reduce unsafe decisions while maintaining predictive performance, and conducted ablation and feature importance analysis to improve interpretability of learned policies.</p>
+									<div style="margin-top:12px;font-size:14px;color:#333;">
+										<strong>Highlight:</strong> Achieved 94 percent predictive accuracy across 800 simulations and reduced unsafe actions from 12 percent to 2 percent with a 15 percent gain in explainability
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="project-card" style="background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);padding:32px 24px;margin-bottom:32px;">
+									<h3 style="font-weight:600;">SwIM Metric for Evaluating Automatic Speech Recognition on Code Switched Speech</h3>
+									<p>Developed a segment level evaluation metric for multilingual and code switched speech recognition systems that exposes errors hidden by standard aggregate metrics. Built an alignment and scoring pipeline using restricted Levenshtein matching and synchronized audio text segments and evaluated modern ASR systems including Whisper and SeamlessM4T to identify systematic failure patterns.</p>
+									<div style="margin-top:12px;font-size:14px;color:#333;">
+										<strong>Highlight:</strong> Revealed 53 to 82 percent more ASR errors than traditional evaluation metrics across multilingual corpora
 									</div>
 								</div>
 							</div>
