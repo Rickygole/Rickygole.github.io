@@ -246,8 +246,7 @@ figure {
 /* Fix overlap: add margin-left for sidebar */
 #colorlib-main {
   width: calc(100% - 300px);
-  margin-left: 300px;
-  float: none;
+  float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -255,7 +254,6 @@ figure {
 @media screen and (max-width: 768px) {
   #colorlib-main {
     width: 100%;
-    margin-left: 0;
     padding: 0 1em;
   }
 }
