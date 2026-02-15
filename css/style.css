@@ -247,6 +247,7 @@ figure {
 #colorlib-main {
   width: calc(100% - 300px);
   float: right;
+  margin-left: 300px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
