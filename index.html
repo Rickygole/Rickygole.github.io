@@ -68,8 +68,8 @@
 						<li><a href="#" data-nav-section="impact">Impact</a></li>
 						<li><a href="#" data-nav-section="awards">Awards</a></li>
 						<li><a href="#" data-nav-section="publications">Publications</a></li>
-						<li><a href="#" data-nav-section="projects">Projects</a></li>
 						<li><a href="#" data-nav-section="research">Research</a></li>
+						<li><a href="#" data-nav-section="projects">Projects</a></li>
 						<li><a href="#" data-nav-section="experience">Experience</a></li>
 						<li><a href="#" data-nav-section="skills">Skills</a></li>
 						<li><a href="#" data-nav-section="education">Education</a></li>
@@ -89,8 +89,8 @@
 						<div class="col-md-12">
 							<div class="about-desc">
 								<span class="heading-meta">About</span>
-								<h2 class="colorlib-heading">I find where AI systems fail, and fix them.</h2>
-								<p class="lead-intro">
+								<h2 class="about-title">I find where AI systems fail, and fix them.</h2>
+								<p>
 									<strong>Ricky Gole</strong> is a machine learning researcher finishing an M.S. in Advanced Computing at Morgan State University (4.0 GPA, graduating December 2026). He stress-tests LLMs, clinical NLP, and retrieval systems to find the failures that benchmark scores hide, then builds safeguards where the evidence supports them.
 								</p>
 								<p>
@@ -360,6 +360,212 @@
 				</div>
 			</section>
 
+			<!-- Research -->
+			<section class="colorlib-experience" data-section="research">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<span class="heading-meta">Research</span>
+							<h2 class="colorlib-heading">Selected Research</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+							<p class="section-intro">Each card shows the key result. Click or tap a card to see how it was measured.</p>
+						</div>
+					</div>
+					<div class="row card-row flashcards">
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Convergent Failure Auditing of Clinical LLM Ensembles: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-medkit" aria-hidden="true"></i></span><span class="fc-date">Apr 2026 to Jun 2026</span></div>
+										<h3>Convergent Failure Auditing of Clinical LLM Ensembles</h3>
+										<div class="fc-metric">19.9&times;<small>unanimous wrong answers vs. chance</small></div>
+										<div class="fc-foot"><span class="fc-badge">IEEE ICDM 2026</span><span class="fc-badge fc-first">First author</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Convergent Failure Auditing of Clinical LLM Ensembles</h4>
+										<ul><li>Evaluated five models (Llama-3-8B, Qwen-2.5-7B, Gemma-3n, GPT-4o, DeepSeek-V3) on 4,089 MedQA and MedMCQA questions. Models pick the same wrong answer far more than independence predicts (24.6% unanimous-wrong vs. 1.23% chance, a 19.9x gap).</li> <li>A distractor-letter shuffle showed the failure is content-driven, not a letter-position artifact.</li> <li>Built a parameter-free safety routing rule reaching 96.1% precision on MedQA at 6.7 to 8.0% human-review cost.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="The Semantic Gap in Behavioral Embeddings for Educational RAG: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-database" aria-hidden="true"></i></span><span class="fc-date">Dec 2025 to Jan 2026</span></div>
+										<h3>The Semantic Gap in Behavioral Embeddings for Educational RAG</h3>
+										<div class="fc-metric">r = 0.006<small>behavioral vs. semantic similarity, 15.8M records</small></div>
+										<div class="fc-foot"><span class="fc-badge">EDM 2026</span><span class="fc-badge fc-first">First author</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>The Semantic Gap in Behavioral Embeddings for Educational RAG</h4>
+										<ul><li>Built a 50-dimensional SVD behavioral manifold from 15.8 million interaction records and found near-zero correlation with semantic embeddings (r = 0.006).</li> <li>Reduced hallucination (p &lt; 0.001) by fine-tuning Llama-3-8B with DPO and LoRA on 600 contrastive pairs, validated on 122 prompts with 10,000 bootstrap resamples.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Cloud Security: AWS Confused Deputy Mitigation: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-lock" aria-hidden="true"></i></span><span class="fc-date">Jan 2025 to May 2025</span></div>
+										<h3>Cloud Security: AWS Confused Deputy Mitigation</h3>
+										<div class="fc-metric">6 / 6<small>attack scenarios blocked, 1M log events analyzed</small></div>
+										<div class="fc-foot"><span class="fc-badge">IEEE Cloud Summit 2026</span><span class="fc-badge fc-first">First author</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Cloud Security: AWS Confused Deputy Mitigation</h4>
+										<ul><li>Blocked cross-account confused deputy attacks across six controlled scenarios using two isolated AWS accounts and ExternalId enforcement.</li> <li>Processed 1 million CloudTrail events with entropy-based anomaly detection, and derived closed-form bounds on attacker success as a function of ExternalId entropy.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Provenance-Conditioned Clinical Encoder (Falsification Study): show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-flask" aria-hidden="true"></i></span><span class="fc-date">Aug 2026 to Sep 2026</span></div>
+										<h3>Provenance-Conditioned Clinical Encoder (Falsification Study)</h3>
+										<div class="fc-metric">7 arms, 3 seeds<small>ablation built to falsify my own hypothesis</small></div>
+										<div class="fc-foot"><span class="fc-badge fc-ongoing">Research project</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Provenance-Conditioned Clinical Encoder (Falsification Study)</h4>
+										<ul><li>Falsified a provenance-conditioning hypothesis in a from-scratch clinical transformer encoder: across seven architecture arms and three seeds, an arbitrary segment-index bias (3.4078 val_loss) beat true authorship labels (3.5310).</li> <li>Showed pretraining loss does not predict downstream performance. On multi-note mortality prediction (36,504 examples), a randomly initialized model reached 0.8014 AUROC vs. 0.7998 for the pretrained block-mask model.</li> <li>Built the full control set and found that a fixed block mask beats the learned bias it was meant to justify (3.2772 vs. 4.3554 val_loss for the vanilla baseline).</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Multi-Omic Fusion Robustness: Signal-Gated Omic Fusion: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-sitemap" aria-hidden="true"></i></span><span class="fc-date">May 2026 to Jun 2026</span></div>
+										<h3>Multi-Omic Fusion Robustness: Signal-Gated Omic Fusion</h3>
+										<div class="fc-metric">0.664 AUROC<small>held with a noise layer; MOGONET dropped 0.149</small></div>
+										<div class="fc-foot"><span class="fc-badge fc-ongoing">Research project</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Multi-Omic Fusion Robustness: Signal-Gated Omic Fusion</h4>
+										<ul><li>Diagnosed modality dominance in antidepressant-response prediction: an uninformative 258,782-SNP genotype layer drags four fusion families below the best single modality (methylation, 0.692 AUROC).</li> <li>A controlled synthetic-noise experiment showed naive fusion declining from 0.651 to 0.518 AUROC as dimensionality scales to 100,000, with strict within-fold feature selection.</li> <li>Built SGOF, a graph-convolutional architecture that weights modalities by held-out signal. It holds AUROC at 0.664 with the noise layer present, while MOGONET dropped 0.149.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="DART: Dialect Robustness Benchmarking for Automated Essay Scoring: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-balance-scale" aria-hidden="true"></i></span><span class="fc-date">Mar 2026 to Jun 2026</span></div>
+										<h3>DART: Dialect Robustness Benchmarking for Automated Essay Scoring</h3>
+										<div class="fc-metric">&beta; = &minus;0.029<small>significant drift against African American English</small></div>
+										<div class="fc-foot"><span class="fc-badge fc-ongoing">Research project</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>DART: Dialect Robustness Benchmarking for Automated Essay Scoring</h4>
+										<ul><li>Built a benchmark of 480 anchor-variant essay pairs across six U.S. English dialect families plus 160 controls, validated by a three-gate pipeline (length drift, DeBERTa-v3 NLI, feature presence) with a 92.71% pass rate.</li> <li>Exposed a directional bias against African American English in a fine-tuned scorer: AAE was the only family with significant negative drift (&beta; = -0.029, p &lt; 0.001).</li> <li>Showed chain-of-thought scaffolding <em>amplifies</em> scoring drift across GPT-4o, GPT-4o-mini, and Llama-3.2-3B judges.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Strategic Friction Mining in Multi-Turn LLM Collaboration: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-comments" aria-hidden="true"></i></span><span class="fc-date">Mar 2026 to Jun 2026</span></div>
+										<h3>Strategic Friction Mining in Multi-Turn LLM Collaboration</h3>
+										<div class="fc-metric">600 tasks<small>seamless vs. strategic-friction agent policies</small></div>
+										<div class="fc-foot"><span class="fc-badge fc-ongoing">Research project</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Strategic Friction Mining in Multi-Turn LLM Collaboration</h4>
+										<ul><li>Built a controlled two-policy simulation pipeline contrasting a seamless-answer agent with a Strategic Friction Framework across a 600-task benchmark spanning three domains and three personas.</li> <li>Encoded interaction traces into an 11-state symbolic vocabulary and mined them with PrefixSpan, transition-graph entropy, and UMAP + HDBSCAN clustering.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Temporal OOD Audit of Clinical NLP (KnowledgeRAG-DDI): show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-search" aria-hidden="true"></i></span><span class="fc-date">Mar 2025 to Apr 2026</span></div>
+										<h3>Temporal OOD Audit of Clinical NLP (KnowledgeRAG-DDI)</h3>
+										<div class="fc-metric">0.73 &rarr; 0.00 F1<small>collapse on post-2019 FDA drug pairs</small></div>
+										<div class="fc-foot"><span class="fc-badge fc-ongoing">Research project</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Temporal OOD Audit of Clinical NLP (KnowledgeRAG-DDI)</h4>
+										<ul><li>On a 600-pair post-2019 FDA out-of-distribution set, BiomedBERT drug-interaction models collapsed from 0.7273 to 0.0000 F1 across four seeds.</li> <li>A controlled name-only check traced the collapse to structural dependence on sentence context rather than drug novelty.</li> <li>Recovered 0.2640 F1 with KnowledgeRAG-DDI, a hybrid BM25 + FAISS retrieval probe over FDA labels.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Benchmark Validity Audit of Knowledge Tracing: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-line-chart" aria-hidden="true"></i></span><span class="fc-date">Mar 2026 to Apr 2026</span></div>
+										<h3>Benchmark Validity Audit of Knowledge Tracing</h3>
+										<div class="fc-metric">35.7%<small>of DKT gains recovered by a 2-feature baseline</small></div>
+										<div class="fc-foot"><span class="fc-badge fc-ongoing">Research project</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Benchmark Validity Audit of Knowledge Tracing</h4>
+										<ul><li>Across 95.3 million EdNet interactions, a 2-feature baseline recovers 35.7% of Deep Knowledge Tracing's above-chance AUC.</li> <li>Introduced the <em>recovery ratio</em> as a reusable benchmark diagnostic, with calibration (Brier, ECE) and multi-seed stability checks.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Prescriptive Persistence: LLM Evaluation and Human-AI Alignment: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-pencil" aria-hidden="true"></i></span><span class="fc-date">Dec 2025 to Jan 2026</span></div>
+										<h3>Prescriptive Persistence: LLM Evaluation and Human-AI Alignment</h3>
+										<div class="fc-metric">42.9% &rarr; 6.6%<small>GPT-5.2 over-correction after intervention</small></div>
+										<div class="fc-foot"><span class="fc-badge">ACM L@S 2026</span><span class="fc-badge">Co-author</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>Prescriptive Persistence: LLM Evaluation and Human-AI Alignment</h4>
+										<ul><li>Co-developed the Prescriptive Gap metric across 12,979 ELL sentences, finding a 9.1% mean over-intervention rate vs. expert benchmarks (Cohen's d = 0.91).</li> <li>A frugal-prompt intervention cut GPT-5.2 over-correction from 42.9% to 6.6% on Korean L1 sentences.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInUp">
+							<div class="flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="BIO-DQNA: Safety-Constrained Reinforcement Learning: show details">
+								<div class="fc-inner">
+									<div class="fc-face fc-front">
+										<div class="fc-top"><span class="fc-icon"><i class="fa fa-heartbeat" aria-hidden="true"></i></span><span class="fc-date">May 2025 to Aug 2025</span></div>
+										<h3>BIO-DQNA: Safety-Constrained Reinforcement Learning</h3>
+										<div class="fc-metric">12% &rarr; 2%<small>unsafe-action rate, 94% policy success</small></div>
+										<div class="fc-foot"><span class="fc-badge">IEEE BIBM 2025</span><span class="fc-badge">Co-author</span><span class="fc-hint">Tap to flip <i class="fa fa-refresh" aria-hidden="true"></i></span></div>
+									</div>
+									<div class="fc-face fc-back">
+										<h4>BIO-DQNA: Safety-Constrained Reinforcement Learning</h4>
+										<ul><li>Raised policy success to 94% while cutting the unsafe-action rate from 12% to 2% with clinically tiered rewards in a custom PyTorch environment.</li> <li>Benchmarked against six DQN variants (through Rainbow) with 100 independent seeds per configuration.</li></ul>
+										<span class="fc-hint">Tap to flip back <i class="fa fa-refresh" aria-hidden="true"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Projects -->
 			<section class="colorlib-work" data-section="projects">
 				<div class="colorlib-narrow-content">
@@ -408,178 +614,6 @@
 								<span class="meta">Sep 2026</span>
 								<p>Measured heat exposure on the walk from METRORail to NRG Stadium at 320,908 degree-hours across six noon World Cup kickoffs by integrating wet bulb globe temperature over each walking leg. It reports the honest 69.2% trip-total share rather than the flattering 91.9% kickoff-instant figure.</p>
 								<div class="tags"><span class="tag">Geospatial</span><span class="tag">Climate</span><span class="tag">Python</span></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Research -->
-			<section class="colorlib-experience" data-section="research">
-				<div class="colorlib-narrow-content">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-							<span class="heading-meta">Research</span>
-							<h2 class="colorlib-heading">Selected Research</h2>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="timeline-centered">
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-2"><i class="fa fa-flask" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Provenance-Conditioned Clinical Encoder (Falsification Study) <span>Aug 2026 to Sep 2026</span></h2>
-											<ul>
-												<li>Falsified a provenance-conditioning hypothesis in a from-scratch clinical transformer encoder: across seven architecture arms and three seeds, an arbitrary segment-index bias (3.4078 val_loss) beat true authorship labels (3.5310).</li>
-												<li>Showed pretraining loss does not predict downstream performance. On multi-note mortality prediction (36,504 examples), a randomly initialized model reached 0.8014 AUROC vs. 0.7998 for the pretrained block-mask model.</li>
-												<li>Built the full control set and found that a fixed block mask beats the learned bias it was meant to justify (3.2772 vs. 4.3554 val_loss for the vanilla baseline).</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-3"><i class="fa fa-sitemap" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Multi-Omic Fusion Robustness: Signal-Gated Omic Fusion <span>May 2026 to Jun 2026</span></h2>
-											<ul>
-												<li>Diagnosed modality dominance in antidepressant-response prediction: an uninformative 258,782-SNP genotype layer drags four fusion families below the best single modality (methylation, 0.692 AUROC).</li>
-												<li>A controlled synthetic-noise experiment showed naive fusion declining from 0.651 to 0.518 AUROC as dimensionality scales to 100,000, with strict within-fold feature selection.</li>
-												<li>Built SGOF, a graph-convolutional architecture that weights modalities by held-out signal. It holds AUROC at 0.664 with the noise layer present, while MOGONET dropped 0.149.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-4"><i class="fa fa-balance-scale" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>DART: Dialect Robustness Benchmarking for Automated Essay Scoring <span>Mar 2026 to Jun 2026</span></h2>
-											<ul>
-												<li>Built a benchmark of 480 anchor-variant essay pairs across six U.S. English dialect families plus 160 controls, validated by a three-gate pipeline (length drift, DeBERTa-v3 NLI, feature presence) with a 92.71% pass rate.</li>
-												<li>Exposed a directional bias against African American English in a fine-tuned scorer: AAE was the only family with significant negative drift (&beta; = -0.029, p &lt; 0.001).</li>
-												<li>Showed chain-of-thought scaffolding <em>amplifies</em> scoring drift across GPT-4o, GPT-4o-mini, and Llama-3.2-3B judges.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-5"><i class="fa fa-medkit" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Convergent Failure Auditing of Clinical LLM Ensembles <span>Apr 2026 to Jun 2026 &middot; IEEE ICDM 2026 &middot; First author</span></h2>
-											<ul>
-												<li>Evaluated five models (Llama-3-8B, Qwen-2.5-7B, Gemma-3n, GPT-4o, DeepSeek-V3) on 4,089 MedQA and MedMCQA questions. Models pick the same wrong answer far more than independence predicts (24.6% unanimous-wrong vs. 1.23% chance, a 19.9x gap).</li>
-												<li>A distractor-letter shuffle showed the failure is content-driven, not a letter-position artifact.</li>
-												<li>Built a parameter-free safety routing rule reaching 96.1% precision on MedQA at 6.7 to 8.0% human-review cost.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-2"><i class="fa fa-comments" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Strategic Friction Mining in Multi-Turn LLM Collaboration <span>Mar 2026 to Jun 2026</span></h2>
-											<ul>
-												<li>Built a controlled two-policy simulation pipeline contrasting a seamless-answer agent with a Strategic Friction Framework across a 600-task benchmark spanning three domains and three personas.</li>
-												<li>Encoded interaction traces into an 11-state symbolic vocabulary and mined them with PrefixSpan, transition-graph entropy, and UMAP + HDBSCAN clustering.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-3"><i class="fa fa-search" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Temporal OOD Audit of Clinical NLP (KnowledgeRAG-DDI) <span>Mar 2025 to Apr 2026</span></h2>
-											<ul>
-												<li>On a 600-pair post-2019 FDA out-of-distribution set, BiomedBERT drug-interaction models collapsed from 0.7273 to 0.0000 F1 across four seeds.</li>
-												<li>A controlled name-only check traced the collapse to structural dependence on sentence context rather than drug novelty.</li>
-												<li>Recovered 0.2640 F1 with KnowledgeRAG-DDI, a hybrid BM25 + FAISS retrieval probe over FDA labels.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-4"><i class="fa fa-line-chart" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Benchmark Validity Audit of Knowledge Tracing <span>Mar 2026 to Apr 2026</span></h2>
-											<ul>
-												<li>Across 95.3 million EdNet interactions, a 2-feature baseline recovers 35.7% of Deep Knowledge Tracing's above-chance AUC.</li>
-												<li>Introduced the <em>recovery ratio</em> as a reusable benchmark diagnostic, with calibration (Brier, ECE) and multi-seed stability checks.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-5"><i class="fa fa-pencil" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Prescriptive Persistence: LLM Evaluation and Human-AI Alignment <span>Dec 2025 to Jan 2026 &middot; ACM L@S 2026 &middot; Co-author</span></h2>
-											<ul>
-												<li>Co-developed the Prescriptive Gap metric across 12,979 ELL sentences, finding a 9.1% mean over-intervention rate vs. expert benchmarks (Cohen's d = 0.91).</li>
-												<li>A frugal-prompt intervention cut GPT-5.2 over-correction from 42.9% to 6.6% on Korean L1 sentences.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-2"><i class="fa fa-database" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>The Semantic Gap in Behavioral Embeddings for Educational RAG <span>Dec 2025 to Jan 2026 &middot; EDM 2026 &middot; First author</span></h2>
-											<ul>
-												<li>Built a 50-dimensional SVD behavioral manifold from 15.8 million interaction records and found near-zero correlation with semantic embeddings (r = 0.006).</li>
-												<li>Reduced hallucination (p &lt; 0.001) by fine-tuning Llama-3-8B with DPO and LoRA on 600 contrastive pairs, validated on 122 prompts with 10,000 bootstrap resamples.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-3"><i class="fa fa-heartbeat" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>BIO-DQNA: Safety-Constrained Reinforcement Learning <span>May 2025 to Aug 2025 &middot; IEEE BIBM 2025 &middot; Co-author</span></h2>
-											<ul>
-												<li>Raised policy success to 94% while cutting the unsafe-action rate from 12% to 2% with clinically tiered rewards in a custom PyTorch environment.</li>
-												<li>Benchmarked against six DQN variants (through Rainbow) with 100 independent seeds per configuration.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-4"><i class="fa fa-lock" aria-hidden="true"></i></div>
-										<div class="timeline-label">
-											<h2>Cloud Security: AWS Confused Deputy Mitigation <span>Jan 2025 to May 2025 &middot; IEEE Cloud Summit 2026 &middot; First author</span></h2>
-											<ul>
-												<li>Blocked cross-account confused deputy attacks across six controlled scenarios using two isolated AWS accounts and ExternalId enforcement.</li>
-												<li>Processed 1 million CloudTrail events with entropy-based anomaly detection, and derived closed-form bounds on attacker success as a function of ExternalId entropy.</li>
-											</ul>
-										</div>
-									</div>
-								</article>
-
-								<article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-									<div class="timeline-entry-inner">
-										<div class="timeline-icon color-none"></div>
-									</div>
-								</article>
 							</div>
 						</div>
 					</div>
@@ -820,5 +854,17 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 
+		<script>
+	document.querySelectorAll('.flashcard').forEach(function (card) {
+		function flip() {
+			var on = card.classList.toggle('flipped');
+			card.setAttribute('aria-pressed', on ? 'true' : 'false');
+		}
+		card.addEventListener('click', flip);
+		card.addEventListener('keydown', function (e) {
+			if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); flip(); }
+		});
+	});
+	</script>
 	</body>
 </html>
