@@ -112,3 +112,8 @@
 .fc-back { overflow-y: auto; scrollbar-width: thin; }
 .fc-metric { font-size: 27px; }
 @media (max-width: 768px) { .fc-inner { height: 330px; } }
+
+/* Code / demo links on project cards */
+.card-links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 16px; }
+.card-links a { font-size: 13px; font-weight: 600; letter-spacing: .02em; }
+.card-links .fa { margin-right: 4px; }
